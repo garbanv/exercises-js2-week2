@@ -21,6 +21,13 @@ function exerciseOne(arrayOfPeople) {
  return content.innerHTML=data.join(" ");
 }
 
+let people = [
+  { name: "Chris", job: "Teacher" },
+  { name: "Joanna", job: "Student" },
+  { name: "Boris", job: "Prime Minister" }
+];
+
+let shopping = ["Milk", "Break", "Eggs", "A Dinosaur", "Cake", "Sugar", "Tea"];
 /**
  *
  * Create a list of shopping items. You should use an unordered list.
@@ -74,3 +81,4 @@ function exerciseThree(books) {
 }
 
 exerciseThree(books);
+
