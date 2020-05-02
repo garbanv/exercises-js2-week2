@@ -15,6 +15,10 @@
  */
 function exerciseOne(arrayOfPeople) {
   let content = document.querySelector("#content");
+  let data = arrayOfPeople.map(function(p){
+    return '<h1>' + p.name+ '</h1>' + '<h2>' + p.job+ '</h2>'
+  })
+ return content.innerHTML=data.join(" ");
 }
 
 /**
@@ -26,6 +30,12 @@ function exerciseOne(arrayOfPeople) {
  */
 function exerciseTwo(shopping) {
   //Write your code in here
+  let content = document.querySelector("#content");
+ let data= shopping.map(function(product){
+    return '<li>' + product + '</li>';
+  }).join('');
+
+ return content.innerHTML='<ul>'+ data +'</ul>';
 }
 
 /**
@@ -59,6 +69,13 @@ function exerciseTwo(shopping) {
 **/
 function exerciseThree(books) {
   //Write your code in here
+    //Write your code in here
+    let data = books.map(book => {
+      return '<li><p>' + book.title + ': ' + book.author + '</p>' + '<img src="'+book.cover+'"/>' + '</li>'
+   }).join(" ");
+    console.log(data)
+    return content.innerHTML='<ul>'+ data +'</ul>';
+    
 }
 
 //
